@@ -1,0 +1,24 @@
+{
+  "name": "slate-creative",
+  "version": "1.0.0",
+  "description": "Slate Creative Website",
+  "scripts": {
+    "test": "echo \"Error: no test specified.\"",
+    "start": "budo --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spentacular/slate-creative.git"
+  },
+  "author": "Spencer Hamm <spentacular@gmail.com> (http://spencerhamm.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spentacular/slate-creative/issues"
+  },
+  "homepage": "https://github.com/spentacular/slate-creative#readme",
+  "devDependencies": {
+    "budo": "^8.2.2",
+    "surge": "latest"
+  },
+  "private": true
+}
