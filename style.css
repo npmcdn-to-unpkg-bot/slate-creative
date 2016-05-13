@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #29b196;
+  font-family: "brandon-grotesque";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.69;
+  font-size: 120%;
+}
+
+/**
+ * Type
+ */
+h2,
+h3,
+h4 {
+  margin: 0 0 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.55;
+}
+
+h2,
+.h2 {
+  font-size: 1.38em;
+}
+
+h3,
+.h3 {
+  font-size: 1.25em;
+}
+
+h4,
+.h4 {
+  font-size: 1.1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #29b196;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+strong,
+.strong {
+  font-weight: 700;
+}
+
+hr {
+  margin: 1.25em 0;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #b2b2b2;
+}
+
+hr.light {
+  border-color: #e8e8e8;
+}
+
+/**
+ * Text Colors
+ */
+.brand { color: #29b196; }
+.white { color: #fff; }
+.gray25 { color: #b2b2b2; }
+.gray90 { color: #404041; }
+
+/**
+ * Forms
+ */
+textarea {
+  padding: 0.3em 0.5em;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: "brandon-grotesque";
+  background-color: #e8e8e8;
+  transition: all 0.2s ease-out;
+}
+
+textarea:focus {
+  outline: 0;
+  border: 1px solid #29b196;
+}
+
+input {
+  padding: 0.5em;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  font-size: 1em;
+  font-family: "brandon-grotesque";
+  transition: all 0.2s ease-out;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #29b196;
+}
+
+label {
+  margin-bottom: 0.5em;
+}
+
+.field {
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #29b196;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  padding: 0.5em 0.8em;
+  font-size: 0.9em;
+  font-family: "brandon-grotesque";
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder { color: #29b196; }
+:-moz-placeholder { color: #29b196; }
+::-moz-placeholder { color: #29b196; }
+:-ms-input-placeholder { color: #29b196; }
+
+/**
+ * Backgrounds
+ */
+.header { background-color: #404041; }
+.about { background-color: #29b196; }
+.work { background-color: #b2b2b2; }
+.contact { background-color: #fff; }
+.footer { background-color: #404041; }
+
+.expand { width: 100%; }
+
+/**
+ * Grid
+ */
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+
+/**
+ * Helpers
+ */
+.mt1 { margin-top: 0.25em; }
+.mr1 { margin-right: 0.25em; }
+.mb1 { margin-bottom: 0.25em; }
+.ml1 { margin-left: 0.25em; }
+
+.mb0 { margin-bottom: 0; }
+
+.bdb0 { border-bottom-width: 0; }
+
+/**
+ * Misc
+ */
+
+.slat {
+  padding: 4.25em 0;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 2em;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.footer {
+  padding: 2em 0;
+}
+
+.social-logo {
+  border-bottom: 0;
+}
+
+.social-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-logo {
+  width: 72px;
+  padding-right: 0.5em;
+  border-right: 1px solid #fff;
+}
+
+.copy {
+  font-size: 0.8em;
+}
+
+.flex .field {
+  flex: 1;
+}
+
+.flex .field:first-child {
+  margin-right: 0.5em;
+}
+
+.flex .field:last-child {
+  margin-left: 0.5em;
+}
+
+/**
+ * Animations
+ *
+ * Using animate.css by Dan Eden
+ */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated-delay {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 4%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+/**
+ * Responsive
+ */
+@media screen and (max-width: 768px) {
+  body { font-size: 100%; }
+}
+
+@media screen and (max-width: 575px) {
+  body { font-size: 95%; }
+}
+
+@media screen and (max-width: 400px) {
+  body { font-size: 90%; }
+}
+
+@media screen and (max-width: 480px) {
+  .flex-col-small {
+    flex-direction: column;
+  }
+
+  .flex .field:first-child {
+    margin-right: 0;
+  }
+
+  .flex .field:last-child {
+    margin-left: 0;
+  }
+
+  .copyright {
+    margin-top: 1em;
+  }
+
+  .slat {
+    padding: 2.5em 0;
+  }
+}
+
+/**
+ * Sweet Alert
+ */
+.sweet-alert {
+  font-family: "brandon-grotesque" !important;
+}
